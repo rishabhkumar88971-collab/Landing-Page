@@ -4,7 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Lead Capture — Apply Now</title>
-  <!-- Meta Pixel Code -->
+  <meta name="description" content="Sign up for a free consultation. Fill the form and we'll contact you." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f5f5f5;--card:#ffffff;--muted:#555;--accent:#4f8bff;--accent-2:#6cc1ff}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#222;background:#fafafa}
+    .container{max-width:980px;margin:40px auto;padding:28px}
+    .card{background:#fff;border:1px solid #e5e5e5;padding:28px;border-radius:14px;box-shadow:0 4px 16px rgba(0,0,0,0.08)}
+    .grid{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    h1{margin:0;font-size:28px;color:#111;line-height:1.05}
+    p.lead{color:#555;margin-top:10px}
+    .features{display:flex;gap:12px;flex-direction:column;margin-top:18px}
+    .feature{display:flex;gap:12px;align-items:flex-start}
+    .dot{width:12px;height:12px;border-radius:6px;background:var(--accent);margin-top:6px;flex:0 0 12px}
+    .form-card{background:#fff;padding:18px;border-radius:12px;border:1px solid #e5e5e5}
+    label{display:block;font-size:13px;color:#555;margin-bottom:6px}
+    input,textarea,select{width:100%;padding:12px;border-radius:8px;border:1px solid #ccc;background:white;color:#222;font-size:14px}
+    input::placeholder,textarea::placeholder{color:#999}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;background:var(--accent);color:#fff;border:none;font-weight:600;cursor:pointer}
+    .small{font-size:13px;color:#555}
+    footer{margin-top:14px;color:#777;font-size:13px;text-align:center}
+    @media(max-width:880px){.grid{grid-template-columns:1fr;}.container{margin:18px;padding:18px}}
+  </style>
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,53 +42,21 @@ fbq('init', '1094978486047057');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1094978486047057&ev=PageView&noscript=1"
-/></noscript>
+src="https://www.facebook.com/tr?id=1094978486047057&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
-  <meta name="description" content="Apply now. Fill the form and we'll contact you." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0b0f13;--card:#0f1720;--muted:#9aa4b2;--accent:#6ee7b7;--accent-2:#60a5fa}
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,var(--bg),#071021 120%)}
-    .container{max-width:980px;margin:40px auto;padding:28px}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.04));border:1px solid rgba(255,255,255,0.03);padding:28px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    .grid{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
-    h1{margin:0;font-size:28px;color:#fff;line-height:1.05}
-    p.lead{color:var(--muted);margin-top:10px}
-    .features{display:flex;gap:12px;flex-direction:column;margin-top:18px}
-    .feature{display:flex;gap:12px;align-items:flex-start}
-    .dot{width:12px;height:12px;border-radius:6px;background:linear-gradient(135deg,var(--accent),var(--accent-2));margin-top:6px;flex:0 0 12px}
-    form{background:transparent}
-    .form-card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
-    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
-    input,textarea,select{width:100%;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#e6eef6;font-size:14px}
-    input::placeholder,textarea::placeholder{color:rgba(230,238,246,0.45)}
-    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#042029;border:none;font-weight:600;cursor:pointer}
-    .small{font-size:13px;color:var(--muted)}
-    .center{display:flex;align-items:center;justify-content:center}
-    .success{background:linear-gradient(90deg,#063b2b,#07263b);padding:16px;border-radius:10px;color:#bff0d8}
-    @media(max-width:880px){.grid{grid-template-columns:1fr;}.container{margin:18px;padding:18px}}
-    footer{margin-top:14px;color:var(--muted);font-size:13px;text-align:center}
-    
-    select option {
-    color: #000;
-    font-weight: 700;
-  }
-  </style>
+
 </head>
 <body>
   <div class="container">
     <div class="card">
       <div class="grid">
+        <h1 style="font-size:40px;font-weight:700;margin-bottom:20px;">Apply Now</h1>
         <div>
-          <h1>Apply Now</h1>
-          <p class="lead">Fill the form below — our team will contact you within 24 hours.</p>
-          <div class="features">
-            <div class="feature"><div class="dot"></div><div><strong>Fast Response</strong><div class="small">We respond within 24 hours via call/WhatsApp.</div></div></div>
+          
+          
+          </div>
             <div class="feature"><div class="dot"></div><div><strong>Privacy First</strong><div class="small">Your data is safe and only used for internal communication.</div></div></div>
-            <div class="feature"><div class="dot"></div><div><strong>Simple Form</strong><div class="small">Only essential info — name, phone, email, location.</div></div></div>
+            <div class="feature"><div class="dot"></div><div><strong>No Overloaded Questions</strong><div class="small">Only essential info — name, phone, email, location.</div></div></div>
           </div>
         </div>
 
@@ -79,7 +71,7 @@ src="https://www.facebook.com/tr?id=1094978486047057&ev=PageView&noscript=1"
               <div class="row" style="margin-top:12px">
                 <div>
                   <label for="phone">Phone</label>
-                  <input id="phone" name="phone" placeholder="Your phone" pattern="[0-9+\- ]{7,}" required>
+                  <input id="phone" name="phone" placeholder="+91 9XXXXXXXXX" pattern="[0-9+\- ]{7,}" required>
                 </div>
                 <div>
                   <label for="email">Email (Optional)</label>
@@ -87,18 +79,20 @@ src="https://www.facebook.com/tr?id=1094978486047057&ev=PageView&noscript=1"
                 </div>
               </div>
 
-              <label for="whatsapp" style="margin-top:12px">WhatsApp Number</label>
-              <input id="whatsapp" name="whatsapp" placeholder="+91 XXXXX XXXXX" pattern="[0-9+\- ]{7,}" required>
-
               <label for="city" style="margin-top:12px">City/Location</label>
               <input id="city" name="city" placeholder="e.g., Delhi, Mumbai" required>
+
+              
+
+              <label for="whatsapp" style="margin-top:12px">WhatsApp Number </label>
+              <input id="whatsapp" name="whatsapp" placeholder="+91 XXXXX XXXXX" pattern="[0-9+\- ]{7,}" required>
 
               <label for="profession" style="margin-top:12px">Profession</label>
               <select id="profession" name="profession" required>
                 <option value="" disabled selected>Select profession</option>
                 <option value="business">Business</option>
-                <option value="student">Student</option>
                 <option value="job">Job</option>
+                <option value="student">Student</option>
                 <option value="housewife">Housewife</option>
               </select>
 
@@ -117,7 +111,7 @@ src="https://www.facebook.com/tr?id=1094978486047057&ev=PageView&noscript=1"
               </div>
 
               <div style="margin-top:14px;display:flex;gap:8px;align-items:center">
-                <button type="submit" class="btn">Apply Now</button>
+                <button type="submit" class="btn">Submit</button>
                 <div id="loading" class="small" style="display:none">Submitting…</div>
               </div>
 
@@ -141,7 +135,7 @@ src="https://www.facebook.com/tr?id=1094978486047057&ev=PageView&noscript=1"
                     loading.style.display='none';
                     res.style.display='block';
                     res.className='success';
-                    res.innerText = 'Alert: Form endpoint not set. Please replace it with a valid endpoint.';
+                    res.innerText = 'Alert: Form endpoint not set. Please replace "FORM_ENDPOINT" with Formspree/Getform/Netlify endpoint.';
                     return;
                   }
 
@@ -160,12 +154,14 @@ src="https://www.facebook.com/tr?id=1094978486047057&ev=PageView&noscript=1"
                       res.style.display='block';
                       res.className='success';
                       res.innerText = 'Server error — please try again later.';
+                      console.warn('Submission error', r.status, json);
                     }
                   } catch(err){
                     loading.style.display='none';
                     res.style.display='block';
                     res.className='success';
                     res.innerText = 'Network error: please check your connection and form endpoint.';
+                    console.error(err);
                   }
                 });
               })();
